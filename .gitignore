@@ -1,0 +1,10 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+brand-message-api-doc-proj/html
+.idea
+*.user
+app.env
+*.flag%                                                                                                                                                                                                                                  
