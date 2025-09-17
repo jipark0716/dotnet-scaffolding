@@ -12,11 +12,14 @@ builder.Services.AddGrpcReflection();
 builder.WebHost.ConfigureKestrel(options =>
 {
     options.ListenLocalhost(5000, o => o.Protocols = HttpProtocols.Http2);
+    options.AddServerHeader = false;
 });
+
 builder.Services.DiHelpService();
 
 WebApplication app = builder.Build();
 
 app.MapGrpcService<HelpServiceServer>();
+app.MapGrpcReflectionService();
 
 app.Run();
