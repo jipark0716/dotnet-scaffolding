@@ -1,0 +1,9 @@
+version: v1
+plugins:
+  - plugin: buf.build/grpc/csharp
+    out: Generated
+  - plugin: csharp
+    out: Generated
+
+# buf generate buf.build/jipark/scaffold
+# grpcui -plaintext localhost:5000
