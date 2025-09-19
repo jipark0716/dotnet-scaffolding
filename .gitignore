@@ -8,3 +8,4 @@ brand-message-api-doc-proj/html
 *.user
 app.env
 *.flag%                                                                                                                                                                                                                                  
+*.pfx
