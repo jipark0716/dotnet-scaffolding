@@ -16,7 +16,7 @@ public class HostedService(
             HelpResponse helpResponse = await helpService.HealthAsync(new Empty());
 
             Console.WriteLine(helpResponse.Uptime.ToTimeSpan());
-            Debug.Assert(!helpResponse.Health);
+            Debug.Assert(helpResponse.Health);
             await Task.Delay(1000, stoppingToken);
         }
     }

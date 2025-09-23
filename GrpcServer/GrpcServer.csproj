@@ -6,19 +6,21 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-    
+
     <ItemGroup>
-        <PackageReference Include="Google.Protobuf" Version="3.27.0" />
-        <PackageReference Include="Grpc.AspNetCore" Version="2.62.0" />
-        <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.62.0" />
+        <PackageReference Include="Google.Protobuf" Version="3.27.0"/>
+        <PackageReference Include="Grpc.AspNetCore" Version="2.62.0"/>
+        <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.62.0"/>
         <PackageReference Include="Grpc.Tools" Version="2.62.0">
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+        <PackageReference Include="Microsoft.AspNetCore.Connections.Abstractions" Version="10.0.0-rc.1.25451.107"/>
     </ItemGroup>
-    
+
     <ItemGroup>
-      <ProjectReference Include="..\HelpService\HelpService.csproj" />
-      <ProjectReference Include="..\Lib.DI\Lib.DI.csproj" />
+        <ProjectReference Include="..\HelpService\HelpService.csproj"/>
+        <ProjectReference Include="..\Lib.DI\Lib.DI.csproj"/>
+        <ProjectReference Include="..\Lib.MTlsManager\Lib.MTlsManager.csproj"/>
     </ItemGroup>
 
 </Project>
